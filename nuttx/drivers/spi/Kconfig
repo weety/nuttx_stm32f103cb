@@ -1,0 +1,84 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+if SPI
+
+config SPI_SLAVE
+	bool "SPI slave"
+	default n
+	---help---
+		Enable support for SPI slave features
+
+if SPI_SLAVE
+
+config SPI_SLAVE_DMA
+	bool "SPI slave DMA"
+	default n
+	depends on ARCH_DMA && EXPERIMENTAL
+	---help---
+		Enable support for DMA data transfers (not yet implemented).
+
+endif
+
+config SPI_EXCHANGE
+	bool "SPI exchange"
+	default y
+	---help---
+		Driver supports a single exchange method (vs a recvblock() and
+		sndblock() methods).
+
+config SPI_CMDDATA
+	bool "SPI CMD/DATA"
+	default n
+	---help---
+		Devices on the SPI bus require out-of-band support to distinguish
+		command transfers from data transfers.  Such devices will often support
+		either 9-bit SPI (yech) or 8-bit SPI and a GPIO output that selects
+		between command and data.
+
+config SPI_CALLBACK
+	bool "Media change callbacks"
+	default y if MMCSD_SPI
+	default n if !MMCSD_SPI
+	---help---
+		Support the callback method in the SPI interface.  This will allow
+		the SPI-based MMC/SD driver to get a notification of changes in the
+		card status when an SD card is inserted or removed.
+
+config SPI_BITBANG
+	bool "SPI bit-bang device"
+	default n
+	---help---
+		Enable support for a generic SPI bit-bang device.
+		See include/nuttx/spi/spi_bitbang.h for further information.
+
+config SPI_HWFEATURES
+	bool
+	default n
+	---help---
+		Selected only if a specific H/W feature is selected.  This is
+		basically the OR of any specific hardware feature and eanbles
+		the SPI hwfeatures() interface method.
+
+config SPI_CRCGENERATION
+	bool
+	default n
+	select SPI_HWFEATURES
+	---help---
+		Selected by MCU Kconfig logic if implementation supports automatic
+		generation of SPI CRCs.  Enables the HWFEAT_CRCGENERATION option
+		as well as the hwfeartures() interface method.
+
+if SPI_BITBANG
+
+config SPI_BITBANG_VARWIDTH
+	bool "SPI bit-bang variable width transfers"
+	default n
+	---help---
+		Enable support for a variable data width transfers.  Default: 8-bit
+		only.
+
+endif # SPI_BITBANG
+endif # SPI
