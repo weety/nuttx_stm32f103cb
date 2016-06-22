@@ -906,6 +906,15 @@ config ARCH_BOARD_STM32_TINY
 		STM32F103C8T6 micro-controller chip, and is (always ?) bundled with
 		an nRF24L01+ wireless module.
 
+config ARCH_BOARD_STM32F103CB
+	bool "STM32f103cb board"
+	depends on ARCH_CHIP_STM32F103CB
+	select ARCH_HAVE_LEDS
+	---help---
+		A configuration for the STM32f103cb board. This board is based on a
+		STM32F103CBT6 micro-controller chip, and is (always ?) bundled with
+		an nRF24L01+ wireless module.
+
 config ARCH_BOARD_STM32F103_MINIMUM
 	bool "STM32F103C8T6 Minimum ARM Development Board"
 	depends on ARCH_CHIP_STM32F103C8
