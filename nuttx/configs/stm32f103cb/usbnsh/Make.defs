@@ -1,5 +1,5 @@
 ############################################################################
-# configs/stm32_tiny/usbnsh/Make.defs
+# configs/stm32f103cb/usbnsh/Make.defs
 #
 #   Copyright (C) 2011, 2012-2013 Gregory Nutt. All rights reserved.
 #   Author: Gregory Nutt <gnutt@nuttx.org>

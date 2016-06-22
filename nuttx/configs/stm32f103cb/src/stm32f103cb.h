@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32_tiny/src/stm32_tiny.h
+ * configs/stm32103cb/src/stm32103cb.h
  *
  *   Copyright (C) 2013 Gregory Nutt. All rights reserved.
  *   Author: Laurent Latil <laurent@latil.nom.fr>

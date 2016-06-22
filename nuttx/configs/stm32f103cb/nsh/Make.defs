@@ -1,5 +1,5 @@
 ############################################################################
-# configs/stm32_tiny/nsh/Make.defs
+# configs/stm32f103cb/nsh/Make.defs
 #
 #   Copyright (C) 2011, 2012-2013 Gregory Nutt. All rights reserved.
 #   Author: Gregory Nutt <gnutt@nuttx.org>

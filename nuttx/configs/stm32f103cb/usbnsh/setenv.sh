@@ -1,5 +1,5 @@
 #!/bin/bash
-# configs/stm32_tiny/usbnsh/setenv.sh
+# configs/stm32f103cb/usbnsh/setenv.sh
 #
 #   Copyright (C) 2011, 2013 Gregory Nutt. All rights reserved.
 #   Author: Gregory Nutt <gnutt@nuttx.org>

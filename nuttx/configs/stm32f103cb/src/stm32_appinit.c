@@ -1,5 +1,5 @@
 /****************************************************************************
- * config/stm32_tiny/src/stm32_appinit.c
+ * config/stm32103cb/src/stm32_appinit.c
  *
  *   Copyright (C) 2009, 2011, 2013, 2016 Gregory Nutt. All rights reserved.
  *   Author: Gregory Nutt <gnutt@nuttx.org>
@@ -47,7 +47,7 @@
 #include <nuttx/board.h>
 
 #include "stm32.h"
-#include "stm32_tiny.h"
+#include "stm32103cb.h"
 
 /****************************************************************************
  * Public Functions

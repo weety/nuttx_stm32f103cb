@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32_tiny/include/board.h
+ * configs/stm32f103cb/include/board.h
  * include/arch/board/board.h
  *
  *   Copyright (C) 2013 Gregory Nutt. All rights reserved.

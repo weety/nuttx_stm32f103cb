@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32_tiny/src/stm32_wireless.c
+ * configs/stm32103cb/src/stm32_wireless.c
  *
  *   Copyright (C) 2009, 2013 Gregory Nutt. All rights reserved.
  *   Author: Laurent Latil <laurent@latil.nom.fr>
@@ -51,7 +51,7 @@
 #include "up_arch.h"
 #include "chip.h"
 #include "stm32.h"
-#include "stm32_tiny.h"
+#include "stm32103cb.h"
 
 /************************************************************************************
  * Private Function Prototypes

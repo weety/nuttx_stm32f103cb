@@ -1,5 +1,5 @@
 #!/bin/bash
-# configs/stm32_tiny/nsh/setenv.sh
+# configs/stm32f103cb/nsh/setenv.sh
 #
 #   Copyright (C) 2011, 2013 Gregory Nutt. All rights reserved.
 #   Author: Gregory Nutt <gnutt@nuttx.org>

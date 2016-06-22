@@ -175,7 +175,7 @@ NuttX EABI "buildroot" Toolchain
   1. You must have already configured Nuttx in <some-dir>/nuttx.
 
      cd tools
-     ./configure.sh stm32_tiny/<sub-dir>
+     ./configure.sh stm32103cb/<sub-dir>
 
   2. Download the latest buildroot package into <some-dir>
 
@@ -369,7 +369,7 @@ STM32 Tiny - specific Configuration Options
     CONFIG_ARCH_BOARD - Identifies the configs subdirectory and
        hence, the board that supports the particular chip or SoC.
 
-       CONFIG_ARCH_BOARD=stm32_tiny
+       CONFIG_ARCH_BOARD=stm32103cb
 
     CONFIG_ARCH_BOARD_name - For use in C code
 

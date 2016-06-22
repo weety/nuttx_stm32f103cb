@@ -1,5 +1,5 @@
 ############################################################################
-# configs/stm32_tiny/src/Makefile
+# configs/stm32f103cb/src/Makefile
 #
 #   Copyright (C) 2009-2013 Gregory Nutt. All rights reserved.
 #   Author: Gregory Nutt <gnutt@nuttx.org>
