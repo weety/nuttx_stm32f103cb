@@ -1,13 +1,13 @@
 # nuttx_stm32f103cb
 nuttx for stm32f103cb
 
-How to build nuttx from git source code?
+# How to build nuttx from git source code?
 
-download:
+# download:
 
 git clone https://github.com/weety/nuttx_stm32f103cb.git
 
-configure:
+# configure:
 
 cd nuttx_stm32f103cb/configs
 
@@ -15,6 +15,6 @@ cd nuttx_stm32f103cb/configs
 
 cd ..
 
-build:
+# build:
 
 make
