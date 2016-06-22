@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32103cb/src/stm32_boot.c
+ * configs/stm32f103cb/src/stm32_boot.c
  *
  *   Copyright (C) 2009, 2011, 2013, 2015 Gregory Nutt. All rights reserved.
  *   Author: Gregory Nutt <gnutt@nuttx.org>
@@ -46,7 +46,7 @@
 #include <arch/board/board.h>
 
 #include "up_arch.h"
-#include "stm32103cb.h"
+#include "stm32f103cb.h"
 
 /************************************************************************************
  * Pre-processor Definitions

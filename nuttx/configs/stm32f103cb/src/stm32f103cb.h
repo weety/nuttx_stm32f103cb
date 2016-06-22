@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32103cb/src/stm32103cb.h
+ * configs/stm32f103cb/src/stm32f103cb.h
  *
  *   Copyright (C) 2013 Gregory Nutt. All rights reserved.
  *   Author: Laurent Latil <laurent@latil.nom.fr>

@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32103cb/src/stm32_pwm.c
+ * configs/stm32f103cb/src/stm32_pwm.c
  *
  *   Copyright (C) 2012-2013, 2015 Gregory Nutt. All rights reserved.
  *   Author: Gregory Nutt <gnutt@nuttx.org>
@@ -50,7 +50,7 @@
 #include "chip.h"
 #include "up_arch.h"
 #include "stm32_pwm.h"
-#include "stm32103cb.h"
+#include "stm32f103cb.h"
 
 /************************************************************************************
  * Pre-processor Definitions

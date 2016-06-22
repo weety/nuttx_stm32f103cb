@@ -1,5 +1,5 @@
 /****************************************************************************
- * configs/stm32103cb/src/stm32_leds.c
+ * configs/stm32f103cb/src/stm32_leds.c
  *
  *   Copyright (C) 2009, 2011, 2013, 2015 Gregory Nutt. All rights reserved.
  *   Author: Laurent Latil <laurent@latil.nom.fr>
@@ -50,7 +50,7 @@
 #include "up_arch.h"
 #include "up_internal.h"
 #include "stm32.h"
-#include "stm32103cb.h"
+#include "stm32f103cb.h"
 
 /****************************************************************************
  * Pre-processor Definitions

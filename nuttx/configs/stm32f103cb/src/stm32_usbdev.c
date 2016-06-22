@@ -1,5 +1,5 @@
 /************************************************************************************
- * configs/stm32103cb/src/stm32_usbdev.c
+ * configs/stm32f103cb/src/stm32_usbdev.c
  *
  *   Copyright (C) 2009-2011, 2013 Gregory Nutt. All rights reserved.
  *   Author: Gregory Nutt <gnutt@nuttx.org>
@@ -50,7 +50,7 @@
 
 #include "up_arch.h"
 #include "stm32.h"
-#include "stm32103cb.h"
+#include "stm32f103cb.h"
 
 /************************************************************************************
  * Pre-processor Definitions
