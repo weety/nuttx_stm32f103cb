@@ -73,12 +73,21 @@
 /****************************************************************************
  * External Definitons
  ****************************************************************************/
-
+#ifndef CONFIG_FS_PROCFS_EXCLUDE_PROCESS
 extern const struct procfs_operations proc_operations;
+#endif
+#if defined(CONFIG_SCHED_CPULOAD) && !defined(CONFIG_FS_PROCFS_EXCLUDE_CPULOAD)
 extern const struct procfs_operations cpuload_operations;
+#endif
+#if defined(CONFIG_MM_KERNEL_HEAP) && !defined(CONFIG_FS_PROCFS_EXCLUDE_KMM)
 extern const struct procfs_operations kmm_operations;
+#endif
+#if defined(CONFIG_MODULE) && !defined(CONFIG_FS_PROCFS_EXCLUDE_MODULE)
 extern const struct procfs_operations module_operations;
+#endif
+#if !defined(CONFIG_FS_PROCFS_EXCLUDE_UPTIME)
 extern const struct procfs_operations uptime_operations;
+#endif
 
 /* This is not good.  These are implemented in other sub-systems.  Having to
  * deal with them here is not a good coupling. What is really needed is a
