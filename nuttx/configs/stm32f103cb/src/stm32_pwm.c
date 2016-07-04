@@ -92,7 +92,7 @@ int board_pwm_setup(void)
     {
       /* Call stm32_pwminitialize() to get an instance of the PWM interface */
 
-      pwm = stm32_pwminitialize(STM32TINY_PWMTIMER);
+      pwm = stm32_pwminitialize(STM32F103CB_PWMTIMER);
       if (!pwm)
         {
           adbg("Failed to get the STM32 PWM lower half\n");

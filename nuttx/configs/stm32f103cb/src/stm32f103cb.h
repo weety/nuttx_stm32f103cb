@@ -92,10 +92,10 @@
  */
 
 #ifdef CONFIG_PWM
-#  if defined(CONFIG_STM32_TIM3_PWM) && defined(CONFIG_STM32_TIM3_PARTIAL_REMAP) && CONFIG_STM32_TIM3_CHANNEL == 2
-#    define STM32TINY_PWMTIMER 3
+#  if defined(CONFIG_STM32_TIM3_PWM)
+#    define STM32F103CB_PWMTIMER 3
 #  else
-#    error To use the PWM device, the timer 3 partial remap must be enabled, and the PWM device must be configured on timer 3 / channel 2
+#    error To use the PWM device, the timer 3 must be enabled
 #  endif
 #endif
 
