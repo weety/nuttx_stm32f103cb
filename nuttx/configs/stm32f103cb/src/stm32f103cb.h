@@ -33,8 +33,8 @@
  *
  ************************************************************************************/
 
-#ifndef __CONFIGS_STM32_TINY_H
-#define __CONFIGS_STM32_TINY_H
+#ifndef __CONFIGS_STM32F103CB_H
+#define __CONFIGS_STM32F103CB_H
 
 /************************************************************************************
  * Included Files
@@ -144,5 +144,5 @@ extern void stm32_usbinitialize(void);
 extern void stm32_wlinitialize(void);
 
 #endif /* __ASSEMBLY__ */
-#endif /* __CONFIGS_HYMINI_STM32V_H */
+#endif /* __CONFIGS_STM32F103CB_H */
 
